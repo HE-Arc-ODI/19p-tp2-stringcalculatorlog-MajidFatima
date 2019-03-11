@@ -39,9 +39,10 @@ public class StringCalculator {
             //test if the numbers array is not empty
             if (!(number.trim().length() == 0)) {
                 Integer numberInt = Integer.parseInt(number);
-                if (numberInt < 0)
+                if (numberInt < 0) {
                     negativeNumbers.add(numberInt);
-                else if (numberInt <= 1000) {
+                    logger.fatal("Fatal : chiffre négatif!");
+                } else if (numberInt <= 1000) {
                     returnValue += numberInt;
                 }else{
                     logger.warn("Warn : chiffre plus grand que 1000!");
