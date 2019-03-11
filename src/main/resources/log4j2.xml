@@ -3,7 +3,7 @@
   <!-- Define custom levels before using them for filtering below. -->
   <CustomLevels>
     <CustomLevel name="DIAG" intLevel="350" />
-    <CustomLevel name="NOTICE" intLevel="450" />
+    <CustomLevel name="ERROR" intLevel="200" />
     <CustomLevel name="FATAL" intLevel="550" />
     <CustomLevel name="INFO" intLevel="400" />
   </CustomLevels>
