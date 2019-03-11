@@ -6,6 +6,8 @@
     <CustomLevel name="ERROR" intLevel="200" />
     <CustomLevel name="FATAL" intLevel="100" />
     <CustomLevel name="INFO" intLevel="400" />
+    <CustomLevel name="DEBUG" intLevel="500" />
+    <CustomLevel name="TRACE" intLevel="600" />
   </CustomLevels>
 
   <Appenders>
