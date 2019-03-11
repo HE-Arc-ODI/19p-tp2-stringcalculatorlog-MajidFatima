@@ -1,12 +1,13 @@
 package ch.hearc.ig.odi.stringcalculatortdd;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class StringCalculator {
+    private static final Logger logger = LogManager.getLogger("StringCalculator");
 
     public StringCalculator() {
     }
@@ -18,9 +19,11 @@ public class StringCalculator {
 
         //if it begins by '//' then it's a personalize delimiter(s)
         if (numbers.startsWith("//")) {
+
             delimiter = this.extractDelimiter(numbers);
             //"cut" the beginning of the string so that the personalize delimiter is removed
             numbersUpdated = numbers.substring(numbers.indexOf("\n") + 1);
+            logger.info("Hello, World!");
         }
         return add(numbersUpdated, delimiter);
     }
@@ -36,10 +39,14 @@ public class StringCalculator {
             //test if the numbers array is not empty
             if (!(number.trim().length() == 0)) {
                 Integer numberInt = Integer.parseInt(number);
-                if (numberInt < 0)
+                if (numberInt < 0) {
                     negativeNumbers.add(numberInt);
-                else if (numberInt <= 1000)
+                    logger.fatal("Fatal : chiffre négatif!");
+                } else if (numberInt <= 1000) {
                     returnValue += numberInt;
+                }else{
+                    logger.warn("Warn : chiffre plus grand que 1000!");
+                }
             }
         }
 
