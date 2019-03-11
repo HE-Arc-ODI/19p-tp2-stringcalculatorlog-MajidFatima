@@ -19,9 +19,11 @@ public class StringCalculator {
 
         //if it begins by '//' then it's a personalize delimiter(s)
         if (numbers.startsWith("//")) {
+
             delimiter = this.extractDelimiter(numbers);
             //"cut" the beginning of the string so that the personalize delimiter is removed
             numbersUpdated = numbers.substring(numbers.indexOf("\n") + 1);
+            logger.info("Hello, World!");
         }
         return add(numbersUpdated, delimiter);
     }
