@@ -2,7 +2,7 @@
 <Configuration status="WARN">
   <!-- Define custom levels before using them for filtering below. -->
   <CustomLevels>
-    <CustomLevel name="DIAG" intLevel="350" />
+    <CustomLevel name="WARN" intLevel="300" />
     <CustomLevel name="ERROR" intLevel="200" />
     <CustomLevel name="FATAL" intLevel="100" />
     <CustomLevel name="INFO" intLevel="400" />
