@@ -41,8 +41,11 @@ public class StringCalculator {
                 Integer numberInt = Integer.parseInt(number);
                 if (numberInt < 0)
                     negativeNumbers.add(numberInt);
-                else if (numberInt <= 1000)
+                else if (numberInt <= 1000) {
                     returnValue += numberInt;
+                }else{
+                    logger.warn("Warn : chiffre plus grand que 1000!");
+                }
             }
         }
 
