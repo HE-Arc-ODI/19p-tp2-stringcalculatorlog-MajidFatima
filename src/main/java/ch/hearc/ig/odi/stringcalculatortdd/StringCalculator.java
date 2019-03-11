@@ -23,7 +23,7 @@ public class StringCalculator {
             delimiter = this.extractDelimiter(numbers);
             //"cut" the beginning of the string so that the personalize delimiter is removed
             numbersUpdated = numbers.substring(numbers.indexOf("\n") + 1);
-            logger.info("Hello, World!");
+            logger.info("Info : delimiter start with // !");
         }
         return add(numbersUpdated, delimiter);
     }
@@ -41,11 +41,11 @@ public class StringCalculator {
                 Integer numberInt = Integer.parseInt(number);
                 if (numberInt < 0) {
                     negativeNumbers.add(numberInt);
-                    logger.fatal("Fatal : chiffre négatif!");
+                    logger.fatal("Fatal : negative numbers!");
                 } else if (numberInt <= 1000) {
                     returnValue += numberInt;
                 }else{
-                    logger.warn("Warn : chiffre plus grand que 1000!");
+                    logger.warn("Warn : number over 1000");
                 }
             }
         }
