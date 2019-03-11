@@ -4,7 +4,7 @@
   <CustomLevels>
     <CustomLevel name="DIAG" intLevel="350" />
     <CustomLevel name="NOTICE" intLevel="450" />
-    <CustomLevel name="VERBOSE" intLevel="550" />
+    <CustomLevel name="FATAL" intLevel="550" />
     <CustomLevel name="INFO" intLevel="400" />
   </CustomLevels>
 
