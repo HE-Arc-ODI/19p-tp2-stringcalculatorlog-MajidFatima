@@ -2,25 +2,23 @@
 <Configuration status="WARN">
   <!-- Define custom levels before using them for filtering below. -->
   <CustomLevels>
-    <CustomLevel name="DIAG" intLevel="350" />
-    <CustomLevel name="NOTICE" intLevel="450" />
-    <CustomLevel name="VERBOSE" intLevel="550" />
+    <CustomLevel name="WARN" intLevel="300" />
+    <CustomLevel name="ERROR" intLevel="200" />
+    <CustomLevel name="FATAL" intLevel="100" />
     <CustomLevel name="INFO" intLevel="400" />
+    <CustomLevel name="DEBUG" intLevel="500" />
+    <CustomLevel name="TRACE" intLevel="600" />
   </CustomLevels>
 
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d %-7level %logger{36} - %msg%n"/>
     </Console>
-    <File name="MyFile" fileName="logs/app.log">
-      <PatternLayout pattern="%d %-7level %logger{36} - %msg%n"/>
-    </File>
   </Appenders>
   <Loggers>
     <Root level="trace">
       <!-- Only events at DIAG level or more specific are sent to the console. -->
       <AppenderRef ref="Console" level="diag" />
-      <AppenderRef ref="MyFile" level="trace" />
     </Root>
   </Loggers>
 </Configuration>
