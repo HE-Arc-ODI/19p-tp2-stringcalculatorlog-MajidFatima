@@ -6,8 +6,9 @@
     </Console>
   </Appenders>
   <Loggers>
-    <Root level="ALL">
+    <Root level="WARN">
       <AppenderRef ref="CONSOLE"/>
     </Root>
+    
   </Loggers>
 </Configuration>
