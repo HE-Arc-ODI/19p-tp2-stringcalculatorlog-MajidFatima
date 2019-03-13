@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e8a41c-db9a-441d-8845-7b16d6a12f0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcabi_jcabi_aspects_0_22_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcabi_jcabi_log_0_17_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_9_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch.hearc.ig.odi.stringcalculatortdd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ch.hearc.ig.odi.stringcalculatortdd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="236">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="204">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -60,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state relative-caret-position="155">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -83,9 +79,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java" />
       </list>
     </option>
   </component>
@@ -185,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552515987911" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552516384821" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -269,23 +265,11 @@
       <updated>1552333949012</updated>
       <workItem from="1552333953434" duration="97000" />
       <workItem from="1552334058836" duration="5046000" />
-      <workItem from="1552482271582" duration="4531000" />
+      <workItem from="1552482271582" duration="5006000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringCalculatorTest - 2019.03.13 at 22h 52m 19s.xml">
-      <configuration name="StringCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTest - 2019.03.13 at 22h 53m 17s.xml">
-      <configuration name="StringCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 03m 14s.xml">
-      <configuration name="StringCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 05m 29s.xml">
-      <configuration name="StringCalculatorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 08m 05s.xml">
       <configuration name="StringCalculatorTest" configurationId="JUnit" />
     </history-entry>
@@ -304,9 +288,21 @@
     <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 11m 10s.xml">
       <configuration name="StringCalculatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 24m 10s.xml">
+      <configuration name="StringCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 25m 32s.xml">
+      <configuration name="StringCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 30m 00s.xml">
+      <configuration name="StringCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTest - 2019.03.13 at 23h 31m 10s.xml">
+      <configuration name="StringCalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14924000" />
+    <option name="totallyTimeSpent" value="15399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,7 +357,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java</url>
-          <line>79</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -480,27 +476,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="155">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/hearc/ig/odi/stringcalculatortdd/StringCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

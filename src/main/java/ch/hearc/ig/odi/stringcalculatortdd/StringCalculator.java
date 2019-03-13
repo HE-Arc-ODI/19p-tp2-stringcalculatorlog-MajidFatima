@@ -8,7 +8,9 @@ import org.apache.logging.log4j.Logger;
 
 public class StringCalculator {
 
-    private static final Logger logger = LogManager.getLogger("StringCalculator");
+    private static final Logger LOGGER = LogManager.getLogger(Class.class.getName());
+
+
 
     public StringCalculator() {
     }
@@ -24,7 +26,9 @@ public class StringCalculator {
             delimiter = this.extractDelimiter(numbers);
             //"cut" the beginning of the string so that the personalize delimiter is removed
             numbersUpdated = numbers.substring(numbers.indexOf("\n") + 1);
-            logger.info("Info : delimiter start with // !");
+            LOGGER.info("Info : delimiter start with // !");
+
+
         }
         return add(numbersUpdated, delimiter);
     }
@@ -42,11 +46,11 @@ public class StringCalculator {
                 Integer numberInt = Integer.parseInt(number);
                 if (numberInt < 0) {
                     negativeNumbers.add(numberInt);
-                    logger.fatal("Fatal : negative numbers!");
+                    LOGGER.fatal("Fatal : negative numbers!");
                 } else if (numberInt <= 1000) {
                     returnValue += numberInt;
                 }else{
-                    logger.warn("Warn : number over 1000");
+                    LOGGER.warn("Warn : number over 1000");
                 }
             }
         }
