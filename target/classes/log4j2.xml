@@ -8,12 +8,22 @@
       </Filters>
     </Console>
     <File name="MyFile" fileName="warning.log">
+    <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
+  </File>
+    <File name="MyFatalFile" fileName="fatal.log">
       <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
     </File>
     <Async name="Async">
       <AppenderRef ref="MyFile"/>
       <Filters>
         <ThresholdFilter level="error"  onMatch="DENY"   onMismatch="NEUTRAL"/>
+      </Filters>
+
+    </Async>
+    <Async name="AsyncFatal">
+      <AppenderRef ref="MyFatalFile"/>
+      <Filters>
+        <ThresholdFilter level="fatal"  onMatch="DENY"   onMismatch="NEUTRAL"/>
       </Filters>
     </Async>
   </Appenders>
@@ -22,6 +32,7 @@
       <Root level="debug">
         <AppenderRef ref="info-stdout-message" level="info"/>
         <AppenderRef ref="Async" level="warn"/>
+        <AppenderRef ref="MyFatalFile" level="fatal"/>
       </Root>
   </Loggers>
 </Configuration>
