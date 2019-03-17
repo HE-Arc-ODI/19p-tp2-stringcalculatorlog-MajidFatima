@@ -4,21 +4,24 @@
     <Console name="info-stdout-message">
       <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
       <Filters>
-        <!-- Now deny warn, error and fatal messages -->
         <ThresholdFilter level="warn"  onMatch="DENY"   onMismatch="NEUTRAL"/>
       </Filters>
     </Console>
-    <File name="MyFile" fileName="app.log">
+    <File name="MyFile" fileName="warning.log">
       <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
     </File>
     <Async name="Async">
       <AppenderRef ref="MyFile"/>
+      <Filters>
+        <ThresholdFilter level="error"  onMatch="DENY"   onMismatch="NEUTRAL"/>
+      </Filters>
     </Async>
   </Appenders>
   <Loggers>
 
       <Root level="debug">
         <AppenderRef ref="info-stdout-message" level="info"/>
+        <AppenderRef ref="Async" level="warn"/>
       </Root>
   </Loggers>
 </Configuration>
