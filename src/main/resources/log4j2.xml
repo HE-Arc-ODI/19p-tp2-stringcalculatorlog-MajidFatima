@@ -4,10 +4,14 @@
     <Console name="CONSOLE" target="SYSTEM_OUT">
       <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
     </Console>
+    <File name="MyFile" fileName="app.log">
+      <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
+    </File>
   </Appenders>
   <Loggers>
     <Root level="ALL">
       <AppenderRef ref="CONSOLE"/>
+      <AppenderRef ref="Async"/>
     </Root>
   </Loggers>
 </Configuration>
