@@ -1,0 +1,11 @@
+[30m[18:54:48]   INFO   [?] - delimiter start with // !
+[m[30m[18:54:48]   INFO   [?] - delimiter start with // !
+[m[30m[18:54:48]   INFO   [?] - delimiter start with // !
+[m[30m[18:54:48]   INFO   [?] - delimiter start with // !
+[m[31;5m[18:54:48]   FATAL  [?] - negative numbers!
+[m[33m[18:54:48]   WARN   [?] - number over 1000
+[m[33m[18:54:48]   WARN   [?] - number over 1000
+[m[31;5m[18:54:48]   FATAL  [?] - negative numbers!
+[m[31;5m[18:54:48]   FATAL  [?] - negative numbers!
+[m[31;5m[18:54:48]   FATAL  [?] - negative numbers!
+[m

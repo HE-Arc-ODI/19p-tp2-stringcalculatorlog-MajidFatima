@@ -7,6 +7,9 @@
     <File name="MyFile" fileName="app.log">
       <PatternLayout pattern="%highlight{[%d{HH:mm:ss}]   %-5level  [%C] - %msg%n}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, TRACE=blue}"/>
     </File>
+    <Async name="Async">
+      <AppenderRef ref="MyFile"/>
+    </Async>
   </Appenders>
   <Loggers>
     <Root level="ALL">
